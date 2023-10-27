@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'PF Agora Sans Pro';
+	src: url('../fonts/PFAgoraSansProRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'PF Agora Sans Pro', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.swiper {
+  width: 100%;
+}
+
+/* Для всех остальных точек пагинации */
+.swiper-pagination-bullet {
+	background-color: transparent !important; /* прозрачный фон */
+	border: 2px solid red; /* красная обводка */
+	width: 12px !important; /* размеры */
+	height: 12px !important; 
+	margin: 0 5px !important; /* отступы между точками, если нужны */
+}
+
+/* Для активной точки пагинации */
+.swiper-pagination-bullet-active {
+	background-color: red !important; /* красный фон */
+	border: 1px solid white; /* белая обводка */
+	width: 12px !important; /* размеры активной точки */
+	height: 12px !important; 
+}

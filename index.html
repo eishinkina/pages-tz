@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Katya Ishinkina Frontend TZ">
+	<meta name="keywords" content="Katya Ishinkina, Frontend, TZ">
+	<title>Katya Ishinkina Frontend TZ</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/swiper.css">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<!-- navigation -->
+	<nav class="nav">
+		<div class="container">
+			<button class="nav__hamburger" id="hamburgerBtn">☰</button>
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a href="#" class="nav__link">Главная</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">Продукты</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">Кейсы</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">Экспертное мнение</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">Контакты</a>
+				</li>
+				<li class="nav__item">
+					<button class="nav__button">Запросить презентацию</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- banner -->
+	<section class="banner">
+		<img class="banner__bottom" src="./img/bg-banner-bottom.svg" alt="BannerBottom">
+		<div class="container">
+			<header class="banner__header">
+				<div class="banner__logo">
+					<img class="banner__logo-img" src="./img/logo.png" alt="Логотип Deep Dive Data Analysis">
+				</div>
+				<h1 class="banner__title">AI-Driven Analytics Platform</h1>
+			</header>
+
+			<div class="features">
+				<div class="features__info">
+					<img class="features__info-img" src="./img/features-1.svg" alt="Логотип обработки данных">
+					<h3 class="features__info-title">Обработка данных</h3>
+					<p class="features__info-text">Мы помогаем клиентам подобрать необходимые источники данных (через Pop UP нужно показать логотипы: Все ОФД, Nielsen, Едадил, СкидкиОнлайн). Валидируем и верифицируем их. Приводим их к единому формату и классификатору.</p>
+				</div>
+
+				<div class="features__section">
+					<div class="features__item">
+						<img class="features__item-img" src="./img/features-2.svg" alt="Логотип Анализ">
+						<h3 class="features__item-title">Анализ</h3>
+					</div>
+					<div class="features__item">
+						<img class="features__item-img" src="./img/features-3.svg" alt="Логотип Визуализация">
+						<h3 class="features__item-title">Визуализация</h3>
+					</div>
+					<div class="features__item">
+						<img class="features__item-img" src="./img/features-4.svg" alt="Логотип Интерпретация">
+						<h3 class="features__item-title">Интерпретация</h3>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- stats -->
+	<section class="stats">
+		<div class="container">
+			<div class="stats__left">
+				<h2 class="stats__title">Промо-давление увеличивается</h2>
+				<canvas id="chart" width="100%"></canvas>
+				<div class="stats__controls">
+					<button class="stats__controls-btn">Почему увеличивается?</button>
+				</div>
+			</div>
+			<div class="stats__right">
+				<h2 class="stats__title">80% данных не используется производителями</h2>
+				<img class="stats__img" src="./img/bg-stats.png" alt="Логотип stats">
+			</div>
+		</div>
+	</section>
+
+	<!-- workflow -->
+	<section class="workflow">
+		<div class="container">
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<h2>Собираем и обрабатываем гранулярные данные на уровне сети</h2>
+						<div class="workflow__content">
+							<div class="workflow__side">
+								<h3 class="workflow__title workflow__title-first">Обработка данных</h3>
+								<ul>
+									<li class="workflow__item">
+										<figure>
+											<img class="workflow__img" src="./img/features-2.svg" alt="Description 1">
+											<figcaption>Мы используем точные алгоритмы и машинное обучение</figcaption>
+									</figure>
+									</li>
+									<li class="workflow__item">
+										<figure>
+											<img class="workflow__img" src="./img/features-1.svg" alt="Description 1">
+											<figcaption>Консолидируем, проверяем, визуализируем и интерпретируем информацию.</figcaption>
+									</figure>
+									</li>
+									<li class="workflow__item">
+										<figure>
+											<img class="workflow__img" src="./img/features-5.svg" alt="Description 1">
+											<figcaption>Разрабатываем рекомендации для эффективной промо-стратегии и тактических решений</figcaption>
+									</figure>
+									</li>
+								</ul>
+							</div>
+							<div class="workflow__side">
+								<h3 class="workflow__title workflow__title-second">Преобразование данных</h3>
+								<div class="terms">
+									<table>
+										<tr class="terms__item">
+											<td class="terms__start">Ежемесячные</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Еженедельные</td>
+										</tr>
+										<tr class="terms__item">
+											<td class="terms__start">Сырые данные</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Промо/<br>регулярные</td>
+										</tr>
+										<tr class="terms__item">
+											<td class="terms__start">Промо/регулярные</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Базовые/<br>Инкрементальные</td>
+										</tr>
+										<tr class="terms__item">
+											<td class="terms__start">Дистрибуция</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Конкретное окружение</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<h2>Собираем и обрабатываем гранулярные данные на уровне сети</h2>
+						<div class="workflow__content">
+							<div class="workflow__side">
+								<h3 class="workflow__title workflow__title-first">Обработка данных</h3>
+								<ul>
+									<li class="workflow__item">
+										<figure>
+											<img class="workflow__img" src="./img/features-2.svg" alt="Description 1">
+											<figcaption>Мы используем точные алгоритмы и машинное обучение</figcaption>
+									</figure>
+									</li>
+									<li class="workflow__item">
+										<figure>
+											<img class="workflow__img" src="./img/features-1.svg" alt="Description 1">
+											<figcaption>Консолидируем, проверяем, визуализируем и интерпретируем информацию.</figcaption>
+									</figure>
+									</li>
+									<li class="workflow__item">
+										<figure>
+											<img class="workflow__img" src="./img/features-5.svg" alt="Description 1">
+											<figcaption>Разрабатываем рекомендации для эффективной промо-стратегии и тактических решений</figcaption>
+									</figure>
+									</li>
+								</ul>
+							</div>
+							<div class="workflow__side">
+								<h3 class="workflow__title workflow__title-second">Преобразование данных</h3>
+								<div class="terms">
+									<table>
+										<tr class="terms__item">
+											<td class="terms__start">Ежемесячные</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Еженедельные</td>
+										</tr>
+										<tr class="terms__item">
+											<td class="terms__start">Сырые данные</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Промо/<br>регулярные</td>
+										</tr>
+										<tr class="terms__item">
+											<td class="terms__start">Промо/регулярные</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Базовые/<br>Инкрементальные</td>
+										</tr>
+										<tr class="terms__item">
+											<td class="terms__start">Дистрибуция</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Конкретное окружение</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<h2>Собираем и обрабатываем гранулярные данные на уровне сети</h2>
+						<div class="workflow__content">
+							<div class="workflow__side">
+								<h3 class="workflow__title workflow__title-first">Обработка данных</h3>
+								<ul>
+									<li class="workflow__item">
+										<figure>
+											<img class="workflow__img" src="./img/features-2.svg" alt="Description 1">
+											<figcaption>Мы используем точные алгоритмы и машинное обучение</figcaption>
+									</figure>
+									</li>
+									<li class="workflow__item">
+										<figure>
+											<img class="workflow__img" src="./img/features-1.svg" alt="Description 1">
+											<figcaption>Консолидируем, проверяем, визуализируем и интерпретируем информацию.</figcaption>
+									</figure>
+									</li>
+									<li class="workflow__item">
+										<figure>
+											<img class="workflow__img" src="./img/features-5.svg" alt="Description 1">
+											<figcaption>Разрабатываем рекомендации для эффективной промо-стратегии и тактических решений</figcaption>
+									</figure>
+									</li>
+								</ul>
+							</div>
+							<div class="workflow__side">
+								<h3 class="workflow__title workflow__title-second">Преобразование данных</h3>
+								<div class="terms">
+									<table>
+										<tr class="terms__item">
+											<td class="terms__start">Ежемесячные</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Еженедельные</td>
+										</tr>
+										<tr class="terms__item">
+											<td class="terms__start">Сырые данные</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Промо/<br>регулярные</td>
+										</tr>
+										<tr class="terms__item">
+											<td class="terms__start">Промо/регулярные</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Базовые/<br>Инкрементальные</td>
+										</tr>
+										<tr class="terms__item">
+											<td class="terms__start">Дистрибуция</td>
+											<td><img src="./img/arrow.svg" alt=""></td>
+											<td class="terms__end">Конкретное окружение</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- scripts -->
+	<script src="./js/chart.js"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
